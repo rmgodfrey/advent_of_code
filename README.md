@@ -1,1 +1,1 @@
-# advent_of_code
+This repository contains my solutions to puzzles from [Advent of Code](https://adventofcode.com).
