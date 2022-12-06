@@ -17,11 +17,15 @@ const sum = array => (
   array.reduce((total, current) => total + current, 0)
 );
 
+/* Other helpers */
+const mod = (x, y) => ((x % y) + y) % y; // true modulo
+
 export {
   ascending,
   compose,
   inputFetcher,
   mapElementsToNumbers,
+  mod,
   splitOnNewLines,
   sum
 };
