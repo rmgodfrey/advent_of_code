@@ -1,1 +1,1 @@
-This repository contains my solutions to puzzles from [Advent of Code](https://adventofcode.com).
+This repository contains my solutions to puzzles from [Advent of Code](https://adventofcode.com). For now, it just contains solutions for 2022, though it may contain solutions for other years in the future.
