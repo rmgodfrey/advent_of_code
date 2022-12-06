@@ -38,26 +38,22 @@ const BONUS_POINTS = new Map([
 // `mode` is either 'shape' or 'outcome', depending on what 'X', 'Y', and 'Z'
 // represent in `code`.
 const getScore = mode => code => yourShape(code, mode) + bonus(code, mode);
-
 const decrypt = (code, dict) => {
   for (const entry of dict) {
     if (code.includes(entry[0])) return entry[1];
   }
 }
-
 const opponentShape = (code) => decrypt(code, OPPONENT_SHAPES);
 const yourShape = (code, mode) => (
   mode == 'shape'   ? decrypt(code, YOUR_SHAPES) :
   mode == 'outcome' ? (opponentShape(code) + outcome(code, mode)) % 3 || 3 :
   null
 );
-
 const outcome = (code, mode) => (
   mode == 'shape'   ? mod(yourShape(code, mode) - opponentShape(code), 3) :
   mode == 'outcome' ? decrypt(code, OUTCOMES) :
   null
 );
-
 const bonus = (code, mode) => BONUS_POINTS.get(outcome(code, mode));
 
 /* Main functions */
