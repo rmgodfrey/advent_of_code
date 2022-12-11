@@ -17,6 +17,11 @@ const sum = array => (
   array.reduce((total, current) => total + current, 0)
 );
 
+/* Iteration */
+const repeat = (n, f, x) => (
+  n > 0 ? repeat(n - 1, f, f(x)) : x
+);
+
 /* Other helpers */
 const mod = (x, y) => ((x % y) + y) % y; // true modulo
 
@@ -26,6 +31,7 @@ export {
   inputFetcher,
   mapElementsToNumbers,
   mod,
+  repeat,
   splitOnNewLines,
   sum
 };

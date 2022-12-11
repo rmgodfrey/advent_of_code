@@ -24,7 +24,7 @@ for (const [day, functions] of Object.entries(solutions)) {
   const article = containerTemplateCopy.querySelector('article'),
         dayName = containerTemplateCopy.querySelector('h2'),
         button = containerTemplateCopy.querySelector('button');
-  dayName.innerText = `Day ${day.match(/\d+/)[0]}`;
+  dayName.innerText = `Day ${Number(day.match(/\d+/)[0])}`;
   button.addEventListener('click', showSolutions(
     solutionTemplateCopy, article, button, functions
   ));
