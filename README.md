@@ -1,1 +1,1 @@
-This repository contains my solutions to puzzles from [Advent of Code](https://adventofcode.com).
+This repository contains my solutions to puzzles from [Advent of Code](https://adventofcode.com). Many of these solutions are here only for posterity and haven't been cleaned up in any way since they were first written. The solutions I would consider "clean" are those from 2022 and days 1-4 from 2023. The other solutions are still quite messy at this point, even though they work (i.e., they return the correct answers).
